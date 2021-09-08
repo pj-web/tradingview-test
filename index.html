@@ -1,11 +1,14 @@
 <!DOCTYPE html
 	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="telephone=no" name="format-detection">
 	<title>HTML Template</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<style>
 		body {
 			width: 100% !important;
@@ -38,38 +41,127 @@
 			mso-table-rspace: 0pt;
 		}
 
-        @media only screen and (max-device-width:600px) {
+        h1 {
+            font-size: 36px;
+            line-height: 43px;
+        }
 
-        .adaptive-block table,
-        .es-header table,
-        .es-footer table {
+        h2 {
+            font-size: 18px; 
+            line-height: 27px;
+        }
+
+        .wrapper {
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+
+        .footer-column {
+            max-width: 50%;
+        }
+
+        .footer-text-left {
+            width: 60%;
+            text-align: left;
+        }
+        .footer-text-right {
+            width: 60%;
+            text-align: right;
+        }
+
+
+        .footer-link {
+            font-size: 14px; 
+            line-height: 22px; 
+        }
+
+        .desktop-hide {
+            display: none !important;
+        }
+
+    @media only screen and (max-device-width: 576px) {
+
+        table {
         width: 100% !important;
         max-width: 600px !important;
-}
+    }
+
+    @media only screen and (max-width: 576px) {
+
+        h1 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+        h2 {
+            font-size: 16px; 
+            line-height: 22px;
+        }
+
+        .wrapper {
+            padding-right: 16px;
+            padding-left: 16px;
+        }
+
+        .mobile-hide {
+            display: none !important;
+        }
+
+        .desktop-hide {
+            display: block !important;
+        }
+
+        .button {
+        width: 100% !important
+      }
+
+
+        .mobile-center {
+            text-align: center !important;
+        }
+        .mobile-center img {
+            display: inline !important;
+        }
+
+        .footer-column {
+            max-width: 100%;
+        }
+
+        .footer-text-left {
+            width: 100%;
+            text-align: center;
+        }
+        .footer-text-right {
+            width: 100%;
+            text-align: center;
+        }
+
+        .footer-link {
+            font-size: 16px; 
+            line-height: 24px; 
+        }
+    }
 }
 
 	</style>
 </head>
-<body style="font-family:'trebuchet ms', 'lucida grande', 'lucida sans unicode', 'lucida sans', tahoma, sans-serif; margin: 0; padding: 0;">
-	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#e5e5e5" style="width:100%;height:100%;">
+<body style="width:100%; font-family:'trebuchet ms', 'lucida grande', 'lucida sans unicode', 'lucida sans', tahoma, sans-serif; margin: 0; padding: 0;">
+	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#e5e5e5" style="width:100%; height:100%;">
 		<tr>
             <td valign="top">
-                <table class="main table-680" cellpadding="0" cellspacing="0" width="680" align="center">
+                <table cellpadding="0" cellspacing="0" width="680" align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; border-spacing: 0px;">
                     <tr>
-                        <td height="40" width="680"></td>
-                    </tr>
-                    <tr>
-                        <td class="header-td" bgcolor="#ffffff" style="padding-top: 32px; padding-right: 40px; padding-bottom: 20px; padding-left: 40px; margin: 0;">
-                            <table class="" cellpadding="0" cellspacing="0" align="center" style="float: left">
+                        <td class="wrapper" bgcolor="#ffffff" style="padding-top: 32px; padding-bottom: 20px; margin: 0;">
+                            <table cellpadding="0" cellspacing="0" align="center" style="float: left">
                                 <tr>
-                                    <td align="left" class="logo" style="padding:0; margin:0; width:310px;">
+                                    <td align="left" class="mobile-center" style="padding:0; margin:0; width:310px;">
                                         <img src="http://u7359.mlh0.ru/tradingview-test/logo-blue.png" alt="logo" style="display: block;border: 0; outline: none; -ms-interpolation-mode: bicubic"
                                         width="158" height="28" />
                                     </td>
                                     
                                 </tr>
                             </table>
-                            <table class="" cellpadding="0" cellspacing="0" align="center" style="float: right">
+                            <table class="mobile-hide" cellpadding="0" cellspacing="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px; float: right;">
                                 <tr>
                                     <td align="right" style="text-align: right;">
                                         <p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; font-family:'trebuchet ms', 'lucida grande', 'lucida sans unicode', 'lucida sans', tahoma, sans-serif;line-height: 27px;  color: #131722; font-size: 18px;">
@@ -80,11 +172,11 @@
                         </td>
                     </tr>
                     <tr>
-                        <td bgcolor="#ffffff" style="padding-top: 24px; padding-right: 40px; padding-bottom: 24px; padding-left: 40px;">
-                            <table class="" cellpadding="0" cellspacing="0" align="center">
+                        <td bgcolor="#ffffff" class="wrapper" style="padding-top: 24px; padding-bottom: 24px;">
+                            <table cellpadding="0" cellspacing="0" align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; border-spacing: 0px;">
                                 <tr>
                                     <td align="center">
-                                        <h1 style="margin: 0; line-height: 43px; mso-line-height-rule: exactly; font-family:'trebuchet ms', 'lucida grande', 'lucida sans unicode', 'lucida sans', tahoma, sans-serif; font-size:36px;font-style:normal; font-weight: normal; color:#131722; text-align:center">
+                                        <h1 style="margin: 0; mso-line-height-rule: exactly; font-family:'trebuchet ms', 'lucida grande', 'lucida sans unicode', 'lucida sans', tahoma, sans-serif; font-style:normal; font-weight: normal; color:#131722; text-align:center">
                                         <strong>The Round Up</strong></h1>
                                     </td>
                                 </tr>
@@ -98,11 +190,11 @@
                         </td>
                     </tr>
                     <tr>
-                        <td bgcolor="#ffffff" align="center" style="padding-top: 16px; padding-right: 40px; padding-left: 40px;">
+                        <td class="wrapper" bgcolor="#ffffff" align="center" style="padding-top: 16px;">
                             <table class="adaptive-block" cellpadding="0" cellspacing="0" align="center">
                                 <tr>
                                     <td>
-                                        <table class="" cellpadding="0" cellspacing="0" align="center" style="padding-top: 24px; padding-bottom: 24px;">
+                                        <table class="adaptive-block" cellpadding="0" cellspacing="0" align="center" style="padding-top: 24px; padding-bottom: 24px;">
                                             <tr>
                                                 <td>
                                                     <table width="100" cellpadding="0" cellspacing="0" align="center" style="float: left">
@@ -114,18 +206,18 @@
                                                     </table>
                                                     <table cellpadding="0" cellspacing="0" align="center" style="float: left; width: 366px;">
                                                         <tr>
-                                                            <td align="left" style="padding: 0; margin: 0">
-                                                                <h2 style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; color:#2962ff;font-size: 18px; line-height: 27px;"><strong>U.S. DOLLAR CURRENCY INDEX</strong></h2>
+                                                            <td  class="mobile-center" align="left" style="padding: 0; margin: 0">
+                                                                <h2 style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; color:#2962ff;"><strong>U.S. DOLLAR CURRENCY INDEX</strong></h2>
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td align="left" style="padding: 0; margin: 0">
+                                                            <td  class="mobile-center" align="left" style="padding: 0; margin: 0">
                                                             <p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;mso-line-height-rule: exactly; color:#131722; font-size:26px; line-height:39px;">
                                                                 388.04&nbsp;<span style="color:#009688">+0.107 +0.11%</span></p>
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td align="left" style="padding: 0; margin: 0">
+                                                            <td class="mobile-center" align="left" style="padding: 0; margin: 0">
                                                                 <p style="margin:0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif; color:#b2b5be; font-size:14px; line-height:21px;">
                                                                 Nov 5 12:59 UTC-5. 1W change.</p>
                                                             </td>
@@ -134,13 +226,433 @@
                                                     <table cellpadding="0" cellspacing="0" align="center" style="float: right">
                                                         <tr>
                                                             <td height="90" align="center" valign="middle">
-                                                                <span class="es-button-border" style="border-style:solid;border-color:#2962ff;background:#ffffff;border-width:1px;display:inline-block;border-radius:5px;width:auto">
-                                                                <a href="https://www.tradingview.com/" class="es-button es-button-1" target="_blank" style="mso-style-priority:100 !important; text-decoration: none; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;mso-line-height-rule:exactly; color: #2962ff; font-size: 18px;border-style: solid; border-color:#ffffff; border-width: 10px 20px;display:inline-block;background:#ffffff;border-radius:5px;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-weight:normal;font-style:normal;line-height:22px;width:auto;text-align:center">Open chart</a></span></td>
+                                                            <span class="button" style="border-style: solid; border-color: #2962ff; background:#ffffff;border-width:1px;display:inline-block;border-radius:5px;width:auto">
+                                                            <a href="https://www.tradingview.com/" target="_blank" style="mso-style-priority:100 !important; text-decoration: none; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;mso-line-height-rule:exactly; color: #2962ff; font-size: 18px;border-style: solid; border-color:#ffffff; border-width: 10px 20px;display:inline-block;background:#ffffff;border-radius:5px;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-weight:normal;font-style:normal;line-height:22px;width:auto;text-align:center">Open chart</a></span></td>
                                                         </tr>
                                                     </table>
                                                 </td>
                                             </tr>
                                         </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:20px;Margin:0;font-size:0">
+                                        <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0"
+                                        role="presentation"
+                                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                        <tr>
+                                            <td style="padding:0;Margin:0;border-bottom:1px solid #e0e3eb;background:none;height:1px;width:100%;margin:0px">
+                                            </td>
+                                        </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="wrapper" bgcolor="#ffffff" align="center" style="padding-top: 16px;">
+                            <table class="adaptive-block" cellpadding="0" cellspacing="0" align="center">
+                                <tr>
+                                    <td>
+                                        <table class="adaptive-block" cellpadding="0" cellspacing="0" align="center" style="padding-top: 24px; padding-bottom: 24px;">
+                                            <tr>
+                                                <td>
+                                                    <table width="100" cellpadding="0" cellspacing="0" align="center" style="float: left">
+                                                        <tr>
+                                                            <td height="90" align="center" valign="middle" style="width: 100px">
+                                                                <img src="http://u7359.mlh0.ru/tradingview-test/euro-usa.png" alt="" style="display:block; border:0; outline: none; -ms-interpolation-mode: bicubic" width="56" height="56" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table cellpadding="0" cellspacing="0" align="center" style="float: left; width: 366px;">
+                                                        <tr>
+                                                            <td  class="mobile-center" align="left" style="padding: 0; margin: 0">
+                                                                <h2 style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; color:#2962ff;"><strong>EURO / U.S. DOLLAR</strong></h2>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td  class="mobile-center" align="left" style="padding: 0; margin: 0">
+                                                            <p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;mso-line-height-rule: exactly; color:#131722; font-size:26px; line-height:39px;">
+                                                                388.04&nbsp;<span style="color:#009688">+0.00050 +0.04%</span></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="mobile-center" align="left" style="padding: 0; margin: 0">
+                                                                <p style="margin:0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif; color:#b2b5be; font-size:14px; line-height:21px;">
+                                                                Nov 5 12:59 UTC-5. 1W change.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table cellpadding="0" cellspacing="0" align="center" style="float: right">
+                                                        <tr>
+                                                            <td height="90" align="center" valign="middle">
+                                                            <span class="button" style="border-style: solid; border-color: #2962ff; background:#ffffff;border-width:1px;display:inline-block;border-radius:5px;width:auto">
+                                                            <a href="https://www.tradingview.com/" target="_blank" style="mso-style-priority:100 !important; text-decoration: none; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;mso-line-height-rule:exactly; color: #2962ff; font-size: 18px;border-style: solid; border-color:#ffffff; border-width: 10px 20px;display:inline-block;background:#ffffff;border-radius:5px;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-weight:normal;font-style:normal;line-height:22px;width:auto;text-align:center">Open chart</a></span></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:20px;Margin:0;font-size:0">
+                                      <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0"
+                                        role="presentation"
+                                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                        <tr>
+                                          <td
+                                            style="padding:0;Margin:0;border-bottom:1px solid #e0e3eb;background:none;height:1px;width:100%;margin:0px">
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="wrapper" bgcolor="#ffffff" align="center" style="padding-top: 16px;">
+                            <table class="adaptive-block" cellpadding="0" cellspacing="0" align="center">
+                                <tr>
+                                    <td>
+                                        <table class="adaptive-block" cellpadding="0" cellspacing="0" align="center" style="padding-top: 24px; padding-bottom: 24px;">
+                                            <tr>
+                                                <td>
+                                                    <table width="100" cellpadding="0" cellspacing="0" align="center" style="float: left">
+                                                        <tr>
+                                                            <td height="90" align="center" valign="middle" style="width: 100px">
+                                                                <img src="http://u7359.mlh0.ru/tradingview-test/bitcoin-usa.png" alt="" style="display:block; border:0; outline: none; -ms-interpolation-mode: bicubic" width="56" height="56" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table cellpadding="0" cellspacing="0" align="center" style="float: left; width: 366px;">
+                                                        <tr>
+                                                            <td  class="mobile-center" align="left" style="padding: 0; margin: 0">
+                                                                <h2 style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; color:#2962ff;"><strong>BITCOIN / U.S. DOLLAR</strong></h2>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td  class="mobile-center" align="left" style="padding: 0; margin: 0">
+                                                            <p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;mso-line-height-rule: exactly; color:#131722; font-size:26px; line-height:39px;">
+                                                                13,369.38&nbsp;<span style="color:#EF5350">−392.62 -2.85%</span></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="mobile-center" align="left" style="padding: 0; margin: 0">
+                                                                <p style="margin:0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif; color:#b2b5be; font-size:14px; line-height:21px;">
+                                                                Nov 5 12:59 UTC-5. 1W change.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table cellpadding="0" cellspacing="0" align="center" style="float: right">
+                                                        <tr>
+                                                            <td height="90" align="center" valign="middle">
+                                                            <span class="button" style="border-style: solid; border-color: #2962ff; background:#ffffff;border-width:1px;display:inline-block;border-radius:5px;width:auto">
+                                                            <a href="https://www.tradingview.com/" target="_blank" style="mso-style-priority:100 !important; text-decoration: none; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;mso-line-height-rule:exactly; color: #2962ff; font-size: 18px;border-style: solid; border-color:#ffffff; border-width: 10px 20px;display:inline-block;background:#ffffff;border-radius:5px;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-weight:normal;font-style:normal;line-height:22px;width:auto;text-align:center">Open chart</a></span></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:20px;Margin:0;font-size:0">
+                                      <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0"
+                                        role="presentation"
+                                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                        <tr>
+                                          <td
+                                            style="padding:0;Margin:0;border-bottom:1px solid #e0e3eb;background:none;height:1px;width:100%;margin:0px">
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="wrapper" bgcolor="#ffffff" align="center" style="padding-top: 16px;">
+                            <table class="adaptive-block" cellpadding="0" cellspacing="0" align="center">
+                                <tr>
+                                    <td>
+                                        <table class="adaptive-block" cellpadding="0" cellspacing="0" align="center" style="padding-top: 24px; padding-bottom: 24px;">
+                                            <tr>
+                                                <td>
+                                                    <table width="100" cellpadding="0" cellspacing="0" align="center" style="float: left">
+                                                        <tr>
+                                                            <td height="90" align="center" valign="middle" style="width: 100px">
+                                                                <img src="http://u7359.mlh0.ru/tradingview-test/usa.png" alt="" style="display:block; border:0; outline: none; -ms-interpolation-mode: bicubic" width="56" height="56" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table cellpadding="0" cellspacing="0" align="center" style="float: left; width: 366px;">
+                                                        <tr>
+                                                            <td  class="mobile-center" align="left" style="padding: 0; margin: 0">
+                                                                <h2 style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; color:#2962ff;"><strong>DOW JONES INDUSTRIAL AVERAGE INDEX</strong></h2>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td  class="mobile-center" align="left" style="padding: 0; margin: 0">
+                                                            <p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;mso-line-height-rule: exactly; color:#131722; font-size:26px; line-height:39px;">
+                                                                388.04&nbsp;<span style="color:#EF5350">−22.79 −22.79%</span></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="mobile-center" align="left" style="padding: 0; margin: 0">
+                                                                <p style="margin:0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif; color:#b2b5be; font-size:14px; line-height:21px;">
+                                                                Nov 5 12:59 UTC-5. 1W change.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table cellpadding="0" cellspacing="0" align="center" style="float: right">
+                                                        <tr>
+                                                            <td height="90" align="center" valign="middle">
+                                                            <span class="button" style="border-style: solid; border-color: #2962ff; background:#ffffff;border-width:1px;display:inline-block;border-radius:5px;width:auto">
+                                                            <a href="https://www.tradingview.com/" target="_blank" style="mso-style-priority:100 !important; text-decoration: none; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;mso-line-height-rule:exactly; color: #2962ff; font-size: 18px;border-style: solid; border-color:#ffffff; border-width: 10px 20px;display:inline-block;background:#ffffff;border-radius:5px;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-weight:normal;font-style:normal;line-height:22px;width:auto;text-align:center">Open chart</a></span></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:20px;Margin:0;font-size:0">
+                                      <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0"
+                                        role="presentation"
+                                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                        <tr>
+                                          <td
+                                            style="padding:0;Margin:0;border-bottom:1px solid #e0e3eb;background:none;height:1px;width:100%;margin:0px">
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="wrapper" bgcolor="#ffffff" align="center" style="padding-top: 16px;">
+                            <table class="adaptive-block" cellpadding="0" cellspacing="0" align="center">
+                                <tr>
+                                    <td>
+                                        <table class="adaptive-block" cellpadding="0" cellspacing="0" align="center" style="padding-top: 24px; padding-bottom: 24px;">
+                                            <tr>
+                                                <td>
+                                                    <table width="100" cellpadding="0" cellspacing="0" align="center" style="float: left">
+                                                        <tr>
+                                                            <td height="90" align="center" valign="middle" style="width: 100px">
+                                                                <img src="http://u7359.mlh0.ru/tradingview-test/apple.png" alt="" style="display:block; border:0; outline: none; -ms-interpolation-mode: bicubic" width="56" height="56" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table cellpadding="0" cellspacing="0" align="center" style="float: left; width: 366px;">
+                                                        <tr>
+                                                            <td  class="mobile-center" align="left" style="padding: 0; margin: 0">
+                                                                <h2 style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; color:#2962ff;"><strong>APPLE INC</strong></h2>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td  class="mobile-center" align="left" style="padding: 0; margin: 0">
+                                                            <p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;mso-line-height-rule: exactly; color:#131722; font-size:26px; line-height:39px;">
+                                                                388.04&nbsp;<span style="color:#EF5350">−22.79 −22.79%</span></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="mobile-center" align="left" style="padding: 0; margin: 0">
+                                                                <p style="margin:0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif; color:#b2b5be; font-size:14px; line-height:21px;">
+                                                                Nov 5 12:59 UTC-5. 1W change.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table cellpadding="0" cellspacing="0" align="center" style="float: right">
+                                                        <tr>
+                                                            <td height="90" align="center" valign="middle">
+                                                            <span class="button" style="border-style: solid; border-color: #2962ff; background:#ffffff;border-width:1px;display:inline-block;border-radius:5px;width:auto">
+                                                            <a href="https://www.tradingview.com/" target="_blank" style="mso-style-priority:100 !important; text-decoration: none; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;mso-line-height-rule:exactly; color: #2962ff; font-size: 18px;border-style: solid; border-color:#ffffff; border-width: 10px 20px;display:inline-block;background:#ffffff;border-radius:5px;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-weight:normal;font-style:normal;line-height:22px;width:auto;text-align:center">Open chart</a></span></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:20px;Margin:0;font-size:0">
+                                      <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0"
+                                        role="presentation"
+                                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                        <tr>
+                                          <td
+                                            style="padding:0;Margin:0;border-bottom:1px solid #e0e3eb;background:none;height:1px;width:100%;margin:0px">
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="wrapper" bgcolor="#ffffff" align="center" style="padding-top: 16px;">
+                            <table class="adaptive-block" cellpadding="0" cellspacing="0" align="center">
+                                <tr>
+                                    <td>
+                                        <table class="adaptive-block" cellpadding="0" cellspacing="0" align="center" style="padding-top: 24px; padding-bottom: 24px;">
+                                            <tr>
+                                                <td>
+                                                    <table width="100" cellpadding="0" cellspacing="0" align="center" style="float: left">
+                                                        <tr>
+                                                            <td height="90" align="center" valign="middle" style="width: 100px">
+                                                                <img src="http://u7359.mlh0.ru/tradingview-test/tesla.png" alt="" style="display:block; border:0; outline: none; -ms-interpolation-mode: bicubic" width="56" height="56" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table cellpadding="0" cellspacing="0" align="center" style="float: left; width: 366px;">
+                                                        <tr>
+                                                            <td  class="mobile-center" align="left" style="padding: 0; margin: 0">
+                                                                <h2 style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; color:#2962ff;"><strong>NASDAQ 100 INDEX</strong></h2>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td  class="mobile-center" align="left" style="padding: 0; margin: 0">
+                                                            <p style="margin: 0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;mso-line-height-rule: exactly; color:#131722; font-size:26px; line-height:39px;">
+                                                                388.04&nbsp;<span style="color:#EF5350">−6.46 −5.60%</span></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="mobile-center" align="left" style="padding: 0; margin: 0">
+                                                                <p style="margin:0; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif; color:#b2b5be; font-size:14px; line-height:21px;">
+                                                                Nov 5 12:59 UTC-5. 1W change.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table cellpadding="0" cellspacing="0" align="center" style="float: right">
+                                                        <tr>
+                                                            <td height="90" align="center" valign="middle">
+                                                            <span class="button" style="border-style: solid; border-color: #2962ff; background:#ffffff;border-width:1px;display:inline-block;border-radius:5px;width:auto">
+                                                            <a href="https://www.tradingview.com/" target="_blank" style="mso-style-priority:100 !important; text-decoration: none; -webkit-text-size-adjust: none; -ms-text-size-adjust: none;mso-line-height-rule:exactly; color: #2962ff; font-size: 18px;border-style: solid; border-color:#ffffff; border-width: 10px 20px;display:inline-block;background:#ffffff;border-radius:5px; font-weight: normal; font-style: normal; line-height:22px; width: auto;text-align:center">Open chart</a></span></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:20px;Margin:0;font-size:0">
+                                        <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                        <tr>
+                                            <td style="padding:0;Margin:0;border-bottom:1px solid #e0e3eb;background:none;height:1px;width:100%;margin:0px">
+                                        </td>
+                                        </tr>
+                                    </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#ffffff" class="wrapper" style="margin: 0;">
+                            <p style="font-size: 24px; line-height: 32px; margin: 0;  margin-bottom: 16px;"><strong>Dive deeper</strong></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#ffffff" class="wrapper" style="margin: 0;">
+                            <p style="font-size: 18px; line-height: 28px; margin: 0;">You can always explore more tickersand analysis with us anytime.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#ffffff" class="wrapper" style="padding-top: 24px; padding-bottom: 20px;">
+                            <span class="button" style="background:#2962ff; display: block; border-radius: 120px; width: 60%; padding-top: 12px; padding-bottom: 12px;">
+                                <a href="https://www.tradingview.com/" target="_blank" style="mso-style-priority:100 !important; text-decoration: none; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; mso-line-height-rule: exactly; color: #ffffff;  display:inline-block;background:#2962ff; border-radius: 5px; font-weight:normal; font-style: normal; font-size: 24px;line-height: 34px; width:auto;text-align:center">Find a new opportunity</a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#ffffff" style="padding: 20px; Margin:0;">
+                            <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                            <tr>
+                                <td style="padding:0;Margin:0;border-bottom:1px solid #e0e3eb;background:none;height:1px;width:100%;margin:0px">
+                                </td>
+                            </tr>
+                        </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#ffffff" class="wrapper" style="margin: 0;">
+                            <table cellpadding="0" cellspacing="0" style="float: left" class="footer-column">
+                                <tr>
+                                    <td align="left">
+                                        <p class="footer-text-left" style="font-size: 14px; line-height: 22px; color: #B2B5BE; margin: 5px;">Thanks for reading, The TradingView Team</p>
+                                    </tdstyle=>
+                                </tr>
+                            </table>
+                            <table cellpadding="0" cellspacing="0" style="float: right" class="footer-column">
+                                <tr>
+                                    <td align="right">
+                                        <p class="footer-text-right" style="font-size: 14px; line-height: 22px; color: #B2B5BE;  margin: 5px;">33 Irving Place, New York,NY 10003</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#ffffff" class="wrapper" style="margin: 0; padding-top: 20px;">
+                            <table cellpadding="0" cellspacing="0" align="center" style="float: left" class="footer-column">
+                                <tr>
+                                    <td align="center">
+                                        <a class="footer-link" style="color: #5B9CF6; text-decoration: none; margin: 5px;" href="https://apps.apple.com/us/app/tradingview-trading-community-charts-and-quotes/id1205990992">App Store</a>
+                                    </td>
+                                    <td align="center">
+                                        <a class="footer-link" style="color: #5B9CF6; text-decoration: none; margin: 5px;" href="https://play.google.com/store/apps/details?id=com.tradingview.tradingviewapp&referrer=utm_source%3Dtradingview%26utm_medium%3Dgplay_footer">Google Play</a>
+                                    </td>
+                                    <td align="center">
+                                        <a class="footer-link" style="color: #5B9CF6; text-decoration: none; margin: 5px;" href="https://www.tradingview.com/desktop/">Desktop app</a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table cellpadding="0" cellspacing="0" align="center" style="float: right;" class="footer-column">
+                                <tr>
+                                    <td align="center">
+                                        <a class="footer-link" style="color: #5B9CF6; text-decoration: none; margin: 5px;" href="https://www.facebook.com/tradingview/">Facebook</a>
+                                    </td>
+                                    <td align="center">
+                                        <a class="footer-link" style="color: #5B9CF6; text-decoration: none; margin: 5px;" href="https://www.youtube.com/channel/UCfOflihrkOKDQZ_ZKtF2VfQ">YouTube</a>
+                                    </td>
+                                    <td align="center">
+                                        <a class="footer-link" style="color: #5B9CF6; text-decoration: none; margin: 5px;" href="https://www.linkedin.com/company/tradingview/">LinkedIn</a>
+                                    </td>
+                                    <td align="center">
+                                        <a class="footer-link" style="color: #5B9CF6; text-decoration: none; margin: 5px;" href="https://www.linkedin.com/company/tradingview/">Twitter</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#ffffff" style="padding: 20px; Margin:0;">
+                            <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                            <tr>
+                                <td style="padding:0;Margin:0;border-bottom:1px solid #e0e3eb;background:none;height:1px;width:100%;margin:0px">
+                                </td>
+                            </tr>
+                        </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table cellpadding="0" cellspacing="0" align="center">
+                                <tr>
+                                    <td align="center" bgcolor="#ffffff" class="wrapper">
+                                        <p class="desktop-hide" style="font-size: 14px; line-height: 22px; color: #B2B5BE; text-align: left;">Want to be featured in this newsletter? Read <a style="color: #5B9CF6; text-decoration: none;" href="tradingview.com" target="_blank">our guidelines</a> and submit your profile in the comments.</p>
+                                        <p style="font-size: 14px; line-height: 22px; color: #B2B5BE; text-align: left;">
+                                            This email was sent to <a style="color: #5B9CF6; text-decoration: none;" href="mailto:mail@tradingview.com">mail@tradingview.com</a> because on 2021-03-05, you signed up at <a style="color: #5B9CF6; text-decoration: none" href="tradingview.com" target="_blank">TradingView.com</a>. If you don't want to receive this type of emails anymore, you can <a style="color: #5B9CF6; text-decoration: none;" href="tradingview.com" target="_blank">unsubscribe</a> at any time.
+                                        </p>
                                     </td>
                                 </tr>
                             </table>
